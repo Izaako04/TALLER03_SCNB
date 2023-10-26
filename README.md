@@ -15,3 +15,8 @@ b) Para cada principio violado, argumente su respuesta.
 
 5. La clase IvaCalculator infringe el principo de Open-Closed debido a la lógica del código, deberiamos estar modificando dicho codigo,
    en vez de estar extendiendo el código.
+
+2. En la clase PagoPayPal se viola el principio de Liskov Substitution (LSP) ya que si no se tiene iniciada la sesión no se realiza 
+   el cobro en el método realizarCobro() por lo que se modifica el comportamiento esperado de dicho método.
+   Para solucionarlo se utilizó un constructor de PagoPayPal que reciba como parámetro una sesión por lo que al llamar al método 
+   realizarCobro() ya se tendría iniciada la sesión.

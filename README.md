@@ -21,6 +21,10 @@ b) Para cada principio violado, argumente su respuesta.
 Sección B)
 
 a) Identificar las violaciones:
-   1. Interfaz inversion principle esta siendo vulnerado debido a que se le está dando demasiado enfasis a las entidades especificas,
-      derivando en el poco uso de interfaces y por consiguiente, en que las entidades esten sujetas a los módulos de bajo nivel.
+   1. Dependency inversion principle esta siendo vulnerado debido a que se le está dando demasiado enfasis a las entidades especificas,
+      derivando en el poco uso de interfaces y por consiguiente, en que las entidades esten sujetas .
+      - En la clase compra, el constructor de dicha clase tiene atributos de similar correspondecia, pero que se ven diferenciados debido
+        a que están establecidos como atributos diferentes.
+      - La solución que se podría aplicar sería el crear una interfaz de PaymentMethod y que cada clase que herede de pago pueda servir como
+        argumento del constructor.
   

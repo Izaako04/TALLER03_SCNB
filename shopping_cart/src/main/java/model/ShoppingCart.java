@@ -1,18 +1,6 @@
 package model;
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-
-import model.Product;
 import java.util.List;
 
-/**
- *
- * @author CltControl
- */
 public class ShoppingCart {
     private List<Product> products;
     

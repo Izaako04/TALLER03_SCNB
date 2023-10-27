@@ -12,12 +12,8 @@ import interfaces.Shoppable;
  */
 public class DigitalProduct extends Product implements Shoppable{
     
-    public DigitalProduct(String name, double price, double weight, String type) {
-        super(name, price, weight, type);
-    }
-    
-    public double getWeight(){
-        return 0;
+    public DigitalProduct(String name, double price) {
+        super(name, price);
     }
 
     @Override

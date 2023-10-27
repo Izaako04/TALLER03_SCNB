@@ -14,7 +14,4 @@ public class PagoPaypal extends Pago implements PaymentMethod{
         // sin necesidad de conocer un estado loggedIn
     }
     
-    // agregarArticulo()
-    // removerArticulo()
-    
 }

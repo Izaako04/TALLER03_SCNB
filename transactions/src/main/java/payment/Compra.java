@@ -6,4 +6,7 @@ public class Compra {
     public Compra(PaymentMethod p){
         this.paymentMethod = p;
     }
+    
+    // agregarArticulo()
+    // removerArticulo()
 }

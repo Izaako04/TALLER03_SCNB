@@ -12,13 +12,13 @@ import interfaces.Shoppable;
  */
 public class Book extends Product implements Shoppable {
 
-    public Book(String name, double price, double weight, String type) {
-        super(name, price, weight, type);
+    public Book(String name, double price) {
+        super(name, price);
     }
 
     @Override
     public double calculateIva() {
-        return super.price;
+        return 0;
     }
     
 }

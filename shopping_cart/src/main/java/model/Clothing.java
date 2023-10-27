@@ -1,19 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package model;
 
 import interfaces.Shoppable;
 
-/**
- *
- * @author CltControl
- */
 public class Clothing extends Product implements Shoppable{
 
-    public Clothing(String name, double price, double weight, String type) {
-        super(name, price, weight, type);
+    public Clothing(String name, double price) {
+        super(name, price);
     }
     
     @Override

@@ -12,8 +12,8 @@ import interfaces.Shoppable;
  */
 public class Technology extends Product implements Shoppable{
 
-    public Technology(String name, double price, double weight, String type) {
-        super(name, price, weight, type);
+    public Technology(String name, double price) {
+        super(name, price);
     }
 
     @Override

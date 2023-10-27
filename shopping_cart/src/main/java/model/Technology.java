@@ -2,24 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package products;
+package model;
 
-import ec.edu.espol.taller03.Product;
 import interfaces.Shoppable;
 
 /**
  *
  * @author CltControl
  */
-public class Clothing extends Product implements Shoppable{
+public class Technology extends Product implements Shoppable{
 
-    public Clothing(String name, double price, double weight, String type) {
+    public Technology(String name, double price, double weight, String type) {
         super(name, price, weight, type);
     }
-    
+
     @Override
     public double calculateIva() {
-       return (super.price)*(0.12);
+        return ((super.price)*(0.15));
     }
-        
+    
 }

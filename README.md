@@ -25,3 +25,4 @@ a) Identificar las violaciones:
 
    2. En la clase PagoPayPal se viola el principio de Liskov Substitution (LSP). Si no se tiene iniciada la sesión, no se realiza el cobro en el método realizarCobro().  Por lo tanto, se modifica el comportamiento esperado de dicho método.
       - Para solucionarlo se utilizó un constructor de PagoPayPal, que reciba como parámetro una sesión, por medio de un objeto tipo Session. Consiguiendo que al llamar al método realizarCobro() se tendría iniciada la sesión.
+   3. En la clase Notificacion, se esta violando el principio de OCP, ya que esta clase debe ser abierta a modificaciones en caso de querer agregar más métodos de pago, se debe crear una nueva interfaz Notificable que sea implementable por cada clase hija de Pago y sea capaz de ajustarlo dependiendo de las características específicas de la clase. 

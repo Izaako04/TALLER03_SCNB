@@ -1,4 +1,4 @@
-package model;
+package products;
 
 public abstract class Product {
     private String name;

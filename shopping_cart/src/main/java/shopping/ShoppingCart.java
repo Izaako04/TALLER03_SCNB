@@ -1,4 +1,5 @@
-package model;
+package shopping;
+import products.Product;
 import java.util.List;
 
 public class ShoppingCart {

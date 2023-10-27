@@ -1,6 +1,6 @@
 package utils;
 
-import model.ShoppingCart;
+import shopping.ShoppingCart;
 
 public class Parser {
     public static void sendReceipt( ShoppingCart sc ) {
